@@ -25,6 +25,6 @@ public class CompatDiskServicesImpl implements CompatDiskServices {
 
     @Override
     public CompatDisk updateById(CompatDisk compatDisk) {
-        compatDiskRepository.save(compatDisk);
+        return compatDiskRepository.save(compatDisk);
     }
 }
